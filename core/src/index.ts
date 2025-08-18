@@ -1,11 +1,7 @@
-import { security } from "./security/security";
-import { monitoring } from "./monitoring/monitor";
-import { loadBalancer } from "./load/load";
+import Security from "./security/security";
 
-export const Akeno = {
-  security,
-  monitoring,
-  loadBalancer
+const Akeno = {
+  Security,
 };
 
 export default Akeno;
