@@ -11,8 +11,9 @@
     "@types/jsonwebtoken": "^9.0.10",
     "@types/node": "^20.19.11",
     "jsonwebtoken": "^9.0.2",
-    "ts-node": "^10.9.1",
-    "typescript": "^5.2.2",
-    "vitest": "^3.2.4"
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2",
+    "vitest": "^3.2.4",
+    "yukino-ts": "^0.0.7"
   }
 }

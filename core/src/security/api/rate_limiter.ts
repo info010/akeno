@@ -1,5 +1,5 @@
 import { RateLimiter, RateLimiterOptions, RateLimiterResult } from "../common/rate_limiter";
-import { logger } from "../../utils/logger";
+import { logger } from "../common/logger";
 
 export class ApiRateLimiter extends RateLimiter {
   constructor(options: RateLimiterOptions) {

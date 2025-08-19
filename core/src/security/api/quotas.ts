@@ -1,4 +1,4 @@
-import { logger } from "../../utils/logger";
+import { logger } from "../common/logger";
 
 export interface QuotaOptions {
   maxQuota: number;
