@@ -16,16 +16,16 @@ describe("API Security Module Tests", () => {
   let replayPrevention: ReplayPrevention;
 
   beforeEach(() => {
-    rateLimiter = new apiModule.ApiRateLimiter({
+    rateLimiter = apiModule.rate_limiter({
       windowMs: 1000,
       maxRequests: 3,
     });
-    quotaManager = new apiModule.QuotaManager({ maxQuota: 5, windowMs: 5000 });
-    headerValidator = new apiModule.HeaderValidator({
+    quotaManager = apiModule.quota({ maxQuota: 5, windowMs: 5000 });
+    headerValidator = apiModule.header_validation({
       requiredHeaders: ["x-api-key", "x-timestamp", "x-signature"],
       hmacSecret: "testsecret",
     });
-    replayPrevention = new apiModule.ReplayPrevention({
+    replayPrevention = apiModule.replayPrevention({
       secret: "testsecret",
       windowMs: 5000,
     });

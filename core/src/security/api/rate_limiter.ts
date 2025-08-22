@@ -31,6 +31,6 @@ export class ApiRateLimiter extends RateLimiter {
   }
 }
 
-export function rate_limiter(options: RateLimiterOptions): RateLimiter {
-  return new RateLimiter(options);
+export function rate_limiter(options: RateLimiterOptions): ApiRateLimiter {
+  return new ApiRateLimiter(options);
 }
